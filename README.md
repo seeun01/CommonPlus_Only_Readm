@@ -38,6 +38,8 @@
 * Spring Boot 3.2.x
 * MySQL 8.x
 
+<br>
+
 ### 프론트엔드 기술 스택
 
 * Next.js 
@@ -54,7 +56,14 @@ cd commonplus-back
 build gradle
 gradlew run
 </code></pre>
+
+<pre><code>npm run dev
+npm run build
+npm run storybook
+</code></pre>
 <br>
+
+
 
 ### 환경변수
 > [노션페이지](https://www.notion.so/env-8308e3ffd01843b8a49d9a173452c2a5?pvs=4) 참고
@@ -64,11 +73,11 @@ gradlew run
 ### 폴더 구조 설명
 ```
  src
- ┣ app /* 앱 라우터 페이지 디렉토리입니다. */
- ┃ ┣ find // 비밀번호 재설정 페이지
+ ┣ app     /* 앱 라우터 페이지 디렉토리입니다. */
+ ┃ ┣ find     // 비밀번호 재설정 페이지
  ┃ ┃ ┣ page.module.css
  ┃ ┃ ┗ page.tsx
- ┃ ┣ group // 쇼핑몰 그룹 관리 페이지
+ ┃ ┣ group     // 쇼핑몰 그룹 관리 페이지
  ┃ ┃ ┣ _components
  ┃ ┃ ┃ ┗ modal
  ┃ ┃ ┃ ┃ ┣ CategoryGroup.tsx
@@ -79,13 +88,13 @@ gradlew run
  ┃ ┃ ┃ ┃ ┗ NoticeGroup.type.ts
  ┃ ┃ ┣ page.module.css
  ┃ ┃ ┗ page.tsx
- ┃ ┣ login // 로그인 페이지
+ ┃ ┣ login     // 로그인 페이지
  ┃ ┃ ┣ _components
  ┃ ┃ ┃ ┣ LoginForm.tsx
  ┃ ┃ ┃ ┗ LoginForm.type.ts
  ┃ ┃ ┣ page.module.css
  ┃ ┃ ┗ page.tsx
- ┃ ┣ mall // 쇼핑몰 계정 관리 페이지
+ ┃ ┣ mall     // 쇼핑몰 계정 관리 페이지
  ┃ ┃ ┣ _components
  ┃ ┃ ┃ ┣ modal
  ┃ ┃ ┃ ┃ ┣ CheckMall.tsx
@@ -104,16 +113,16 @@ gradlew run
  ┃ ┃ ┣ page.module.css
  ┃ ┃ ┣ page.tsx
  ┃ ┃ ┗ page.type.ts
- ┃ ┣ product // 보관 상품 페이지
+ ┃ ┣ product     // 보관 상품 페이지
  ┃ ┃ ┣ edit
  ┃ ┃ ┃ ┣ _utils
  ┃ ┃ ┃ ┃ ┗ utils.ts
  ┃ ┃ ┃ ┗ page.tsx
- ┃ ┃ ┣ management // 상품 관리 페이지
+ ┃ ┃ ┣ management     // 상품 관리 페이지
  ┃ ┃ ┃ ┣ mall
  ┃ ┃ ┃ ┃ ┣ page.module.css
  ┃ ┃ ┃ ┃ ┗ page.tsx
- ┃ ┃ ┃ ┗ storage // 보관 상품 관리
+ ┃ ┃ ┃ ┗ storage     // 보관 상품 관리
  ┃ ┃ ┃ ┃ ┣ @modal
  ┃ ┃ ┃ ┃ ┃ ┣ (.)uploadShoppingmall
  ┃ ┃ ┃ ┃ ┃ ┃ ┣ _ui
@@ -131,18 +140,18 @@ gradlew run
  ┃ ┃ ┃ ┃ ┃ ┃ ┣ uploadShoppingmall.module.css
  ┃ ┃ ┃ ┃ ┃ ┃ ┗ uploadShoppingmall.type.ts
  ┃ ┃ ┃ ┃ ┃ ┗ default.ts
- ┃ ┃ ┃ ┃ ┣ uploadShoppingmall // intercept routing segment
+ ┃ ┃ ┃ ┃ ┣ uploadShoppingmall     // intercept routing segment
  ┃ ┃ ┃ ┃ ┃ ┗ page.tsx
  ┃ ┃ ┃ ┃ ┣ layout.tsx
  ┃ ┃ ┃ ┃ ┗ page.tsx
- ┃ ┃ ┣ new // 보관 상품 등록 페이지
+ ┃ ┃ ┣ new     // 보관 상품 등록 페이지
  ┃ ┃ ┃ ┣ layout.tsx
  ┃ ┃ ┃ ┗ page.tsx
  ┃ ┃ ┣ page.tsx
  ┃ ┃ ┣ template.module.css
  ┃ ┃ ┣ template.tsx
  ┃ ┃ ┗ utils.ts
- ┃ ┣ signup // 회원가입 페이지
+ ┃ ┣ signup     // 회원가입 페이지
  ┃ ┃ ┣ _components
  ┃ ┃ ┃ ┣ SignupForm.tsx
  ┃ ┃ ┃ ┗ SignupForm.type.ts
@@ -153,36 +162,36 @@ gradlew run
  ┃ ┣ globals.css
  ┃ ┣ layout.tsx
  ┃ ┣ page.module.css
- ┃ ┗ page.tsx // 메인 페이지
- ┣ assets /* 이미지 디렉토리입니다. */
+ ┃ ┗ page.tsx     // 메인 페이지
+ ┣ assets     /* 이미지 디렉토리입니다. */
  ┃ ┣ images
- ┃ ┗ ┗ icons // icon asset
- ┣ components /* 컴포넌트 디렉토리입니다. */
+ ┃ ┗ ┗ icons     // icon asset
+ ┣ components     /* 컴포넌트 디렉토리입니다. */
  ┃ ┣ atoms
- ┃ ┃ ┣ Button // 버튼 컴포넌트
- ┃ ┃ ┣ Dropdown // Dropdown Select 컴포넌트
- ┃ ┃ ┣ Icon // 아이콘
- ┃ ┃ ┣ Input // 인풋
- ┃ ┃ ┃ ┣ Checkbox // 체크박스 인풋
- ┃ ┃ ┃ ┣ DateInput // react day picker 활용 날짜 입력 인풋
- ┃ ┃ ┃ ┣ Radio // 라디오 인풋
- ┃ ┃ ┃ ┣ TextEditor // react-quill 라이브러리 활용 텍스트 필드
- ┃ ┃ ┃ ┗ TextField // input type text, number ..
- ┃ ┃ ┣ Logo // 메인 로고
- ┃ ┃ ┣ Modal // 모달
- ┃ ┃ ┣ RequireStar // 필수 필드 빨간 별
- ┃ ┃ ┣ Table // 표
- ┃ ┃ ┣ ToastPopup // 토스트 팝업
- ┃ ┃ ┗ Typography // 텍스트 표현하는 컴포넌트
+ ┃ ┃ ┣ Button     // 버튼 컴포넌트
+ ┃ ┃ ┣ Dropdown     // Dropdown Select 컴포넌트
+ ┃ ┃ ┣ Icon     // 아이콘
+ ┃ ┃ ┣ Input     // 인풋
+ ┃ ┃ ┃ ┣ Checkbox     // 체크박스 인풋
+ ┃ ┃ ┃ ┣ DateInput     // react day picker 활용 날짜 입력 인풋
+ ┃ ┃ ┃ ┣ Radio     // 라디오 인풋
+ ┃ ┃ ┃ ┣ TextEditor     // react-quill 라이브러리 활용 텍스트 필드
+ ┃ ┃ ┃ ┗ TextField     // input type text, number ..
+ ┃ ┃ ┣ Logo     // 메인 로고
+ ┃ ┃ ┣ Modal     // 모달
+ ┃ ┃ ┣ RequireStar     // 필수 필드 빨간 별
+ ┃ ┃ ┣ Table     // 표
+ ┃ ┃ ┣ ToastPopup     // 토스트 팝업
+ ┃ ┃ ┗ Typography     // 텍스트 표현하는 컴포넌트
  ┃ ┣ organisms
  ┃ ┃ ┣ EmptyBox
- ┃ ┃ ┣ Gnb // 글로벌 네비게이션 바입니다.
+ ┃ ┃ ┣ Gnb     // 글로벌 네비게이션 바입니다.
  ┃ ┃ ┣ MallLnb 
  ┃ ┃ ┣ PageInformation
- ┃ ┃ ┣ ProductLnb // 상품 페이지 컨텍스트에서 사용되는 local navigation bar
- ┃ ┃ ┣ SelectionButton // 리젝된 컴포넌트입니다.
- ┃ ┃ ┗ productManagementTable // 상품 관리 table
- ┃ ┃ ┃ ┣ Storage // 보관 상품
+ ┃ ┃ ┣ ProductLnb     // 상품 페이지 컨텍스트에서 사용되는 local navigation bar
+ ┃ ┃ ┣ SelectionButton     // 리젝된 컴포넌트입니다.
+ ┃ ┃ ┗ productManagementTable     // 상품 관리 table
+ ┃ ┃ ┃ ┣ Storage     // 보관 상품
  ┃ ┗ templates
  ┃ ┃ ┣ group
  ┃ ┃ ┃ ┣ address
@@ -203,10 +212,10 @@ gradlew run
  ┃ ┃ ┃ ┃ ┣ MallTable.module.css
  ┃ ┃ ┃ ┃ ┣ MallTable.tsx
  ┃ ┃ ┃ ┃ ┗ MallTable.type.ts
- ┃ ┃ ┣ product // 상품 관련
- ┃ ┃ ┃ ┣ form // 상품 등록 form template
+ ┃ ┃ ┣ product     // 상품 관련
+ ┃ ┃ ┃ ┣ form     // 상품 등록 form template
  ┃ ┃ ┃ ┃ ┣ components
- ┃ ┃ ┃ ┃ ┃ ┣ ui // 상품 등록 form에서 사용되는 UI 컴포넌트들
+ ┃ ┃ ┃ ┃ ┃ ┣ ui     // 상품 등록 form에서 사용되는 UI 컴포넌트들
  ┃ ┃ ┃ ┃ ┃ ┃ ┣ Fieldset
  ┃ ┃ ┃ ┃ ┃ ┃ ┣ Header
  ┃ ┃ ┃ ┃ ┃ ┃ ┣ ImageInput
@@ -230,7 +239,7 @@ gradlew run
  ┃ ┃ ┃ ┃ ┗ ShopProductTable.type.ts
  ┣ fonts
  ┃ ┗ index.ts
- ┣ hooks /* 커스텀 혹이 위치하는 폴더입니다. */
+ ┣ hooks     /* 커스텀 혹이 위치하는 폴더입니다. */
  ┃ ┣ useDidMountAfterOnceEffect.ts
  ┃ ┣ useDidMountEffect.ts
  ┃ ┣ useKeyDown.ts
@@ -240,7 +249,7 @@ gradlew run
  ┃ ┣ useToast.ts
  ┃ ┣ useToggle.ts
  ┃ ┗ withRequireStar.tsx
- ┣ services /* API 관련 로직의 디렉토리 입니다. */
+ ┣ services     /* API 관련 로직의 디렉토리 입니다. */
  ┃ ┣ creates
  ┃ ┃ ┣ product
  ┃ ┃ ┃ ┣ createProduct.ts
@@ -282,15 +291,15 @@ gradlew run
  ┃ ┃ ┃ ┣ patchProduct.ts
  ┃ ┃ ┃ ┣ patchProductImage.ts
  ┃ ┃ ┃ ┗ patchProductProcess.ts
- ┣ stories /* 스토리북 디렉토리 입니다. */
+ ┣ stories     /* 스토리북 디렉토리 입니다. */
  ┃ ┣ atoms
  ┃ ┗ organisms
- ┣ types /* 범용 타입 디렉토리 입니다. */
+ ┣ types     /* 범용 타입 디렉토리 입니다. */
  ┃ ┣ mall.ts
  ┃ ┣ status.ts
  ┃ ┣ styleTypes.ts
  ┃ ┗ utilityTypes.ts
- ┣ utils /* utils 디렉토리 입니다. */
+ ┣ utils     /* utils 디렉토리 입니다. */
  ┃ ┣ constants
  ┃ ┃ ┣ config.ts
  ┃ ┃ ┣ mall.ts
