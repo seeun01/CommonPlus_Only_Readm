@@ -63,6 +63,20 @@ npm run storybook
 </code></pre>
 <br>
 
+## 시연영상
+### 쇼핑몰 계정 관리 페이지
+
+![342233051-b93f528c-8640-42e0-8ab1-8c8c0c474637](https://github.com/user-attachments/assets/42ae9f60-d4de-4e30-a818-8775444017fa)
+<br/>
+
+### 쇼핑몰 그룹 관리 페이지
+![그룹관리](https://github.com/user-attachments/assets/8496829e-a03a-4c37-950d-d21b8672722d)
+<br/>
+
+### 보관 상품(쇼핑몰, 커먼플러스) 관련 기능
+![보관상품](https://github.com/user-attachments/assets/9f780055-eb2b-4914-b8fd-c21d56d49708)
+
+
 
 
 ### 환경변수
